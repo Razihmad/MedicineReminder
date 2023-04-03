@@ -5,6 +5,7 @@ from multiselectfield import MultiSelectField
 
 class Patient(models.Model):
     name = models.CharField(max_length=100)
+    phone = models.CharField(max_length=100)
     city = models.CharField(max_length=100)
     age = models.IntegerField()
     sex = models.CharField(max_length=10,choices=(("Male","Male"),("Female","Female")))
