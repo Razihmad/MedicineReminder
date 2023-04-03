@@ -15,7 +15,7 @@ class Treatment(models.Model):
     disease = models.CharField(max_length=1000)
     medicine = models.CharField(max_length=1000)
     dosage = models.CharField(max_length=1000)
-    days = MultiSelectField(choices=(("Monday","Monday"),("Tuesday","Tuesday"),("Wednesday","Wednesday"),("Thursday","Thursday"),
+    days = MultiSelectField(max_length=100,choices=(("Monday","Monday"),("Tuesday","Tuesday"),("Wednesday","Wednesday"),("Thursday","Thursday"),
                                      ("Friday","Friday"),("Saturday","Saturday"),("Sunday","Sunday")
                                      ))
     
