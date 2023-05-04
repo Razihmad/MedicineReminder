@@ -20,5 +20,7 @@ class Treatment(models.Model):
     days = MultiSelectField(max_length=100,choices=(("Monday","Monday"),("Tuesday","Tuesday"),("Wednesday","Wednesday"),("Thursday","Thursday"),
                                      ("Friday","Friday"),("Saturday","Saturday"),("Sunday","Sunday")
                                      ))
-    # completed = models.BooleanField(default=False)
+    duration = models.IntegerField(default=0)
+    count = models.IntegerField(default=0)
+
     
